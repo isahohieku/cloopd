@@ -51,8 +51,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/savings/src/environments/environment.ts",
-                  "with": "projects/savings/src/environments/environment.prod.ts"
+                  "replace": "projects/environments/environment.ts",
+                  "with": "projects/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -154,8 +154,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/lettings/src/environments/environment.ts",
-                  "with": "projects/lettings/src/environments/environment.prod.ts"
+                  "replace": "projects/environments/environment.ts",
+                  "with": "projects/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -257,8 +257,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/trades/src/environments/environment.ts",
-                  "with": "projects/trades/src/environments/environment.prod.ts"
+                  "replace": "projects/environments/environment.ts",
+                  "with": "projects/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
