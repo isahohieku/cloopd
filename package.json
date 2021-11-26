@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "lint": "eslint . --ext .js,.ts",
-    "test": "ng test"
+    "test": "ng test",
+    "savings": "yarn start --project='savings'",
+    "lettings": "yarn start --project='lettings'",
+    "trades": "yarn start --project='trades'"
   },
   "private": true,
   "dependencies": {
