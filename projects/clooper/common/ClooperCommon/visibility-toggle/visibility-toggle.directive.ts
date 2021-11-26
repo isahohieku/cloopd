@@ -1,14 +1,19 @@
-import { Directive, ElementRef, Renderer2 } from '@angular/core';
+import { Directive, ElementRef, HostListener, Renderer2 } from '@angular/core';
 
 @Directive({
   selector: '[appVisibilityToggle]'
 })
 export class VisibilityToggleDirective {
+  @HostListener('click', ['$event']) toggleView(event){
+    const button = this.elem.nativeElement;
+    const type = button.type;
+    if (type === 'password') {
+      button.type = 'text'
+    } else {
+      button.type = 'password';
+    }
+  }
 
-  constructor(private renderer: Renderer2, private el: ElementRef) { }
-
-  ngOnInit(): void {
-    // this.renderer.setAttribute(this.el.nativeElement);
-}
+  constructor(private elem: ElementRef) { }
 
 }
