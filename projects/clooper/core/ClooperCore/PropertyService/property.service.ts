@@ -1,25 +1,22 @@
-import { HttpClient } from '@angular/common/http';
+import type { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import type { Router } from '@angular/router';
 import { environment } from 'environments/environment';
-import { Observable, map, catchError, of } from 'rxjs';
+import type { IResponse } from 'projects/clooper/common/ClooperTypes/response';
+import type { Observable } from 'rxjs';
+import { map, catchError, of } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PropertyService {
-
   readonly DEALS_URL = `${environment.API_ENDPOINT}properties`;
-  constructor(
-    public router: Router,
-    private http: HttpClient,
-  ) { }
+  constructor(public router: Router, private http: HttpClient) {}
 
-  getProperties(): Observable<Object> {
-    return this.http
-      .get(this.DEALS_URL)
-      .pipe(map((response: Object) => response),
-        catchError(() => of('Properties Error'))
-      );
+  getProperties(): Observable<IResponse | string> {
+    return this.http.get<IResponse>(this.DEALS_URL).pipe(
+      map((response: IResponse) => response),
+      catchError(() => of('Properties Error')),
+    );
   }
 }

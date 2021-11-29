@@ -1,1 +1,22 @@
-<h1>Say Hello to the Lettings App</h1>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h1 class="mb-4">Say Hello to the Lettings App</h1>
+
+            <div class="input-group mt-3">
+                <app-input [type]="show ? 'text' : 'password'"></app-input>
+                <button class="btn btn-primary" type="button" (click)="showPassword()">Toggle Password</button>
+            </div>
+
+            <!-- Accordion -->
+            <div class="mt-5">
+                <app-accordion></app-accordion>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-5">
+                <app-pagination></app-pagination>
+            </div>
+        </div>
+    </div>
+</div>

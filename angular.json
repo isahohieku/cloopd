@@ -29,13 +29,8 @@
             "polyfills": "projects/savings/src/polyfills.ts",
             "tsConfig": "projects/savings/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/savings/src/favicon.ico",
-              "projects/savings/src/assets"
-            ],
-            "styles": [
-              "projects/savings/src/styles.scss"
-            ],
+            "assets": ["projects/savings/src/favicon.ico", "projects/savings/src/assets"],
+            "styles": ["projects/savings/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -100,13 +95,8 @@
             "tsConfig": "projects/savings/tsconfig.spec.json",
             "karmaConfig": "projects/savings/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/savings/src/favicon.ico",
-              "projects/savings/src/assets"
-            ],
-            "styles": [
-              "projects/savings/src/styles.scss"
-            ],
+            "assets": ["projects/savings/src/favicon.ico", "projects/savings/src/assets"],
+            "styles": ["projects/savings/src/styles.scss"],
             "scripts": []
           }
         }
@@ -135,13 +125,8 @@
             "polyfills": "projects/lettings/src/polyfills.ts",
             "tsConfig": "projects/lettings/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/lettings/src/favicon.ico",
-              "projects/lettings/src/assets"
-            ],
-            "styles": [
-              "projects/lettings/src/styles.scss"
-            ],
+            "assets": ["projects/lettings/src/favicon.ico", "projects/lettings/src/assets"],
+            "styles": ["projects/lettings/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -206,13 +191,8 @@
             "tsConfig": "projects/lettings/tsconfig.spec.json",
             "karmaConfig": "projects/lettings/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/lettings/src/favicon.ico",
-              "projects/lettings/src/assets"
-            ],
-            "styles": [
-              "projects/lettings/src/styles.scss"
-            ],
+            "assets": ["projects/lettings/src/favicon.ico", "projects/lettings/src/assets"],
+            "styles": ["projects/lettings/src/styles.scss"],
             "scripts": []
           }
         }
@@ -241,13 +221,8 @@
             "polyfills": "projects/trades/src/polyfills.ts",
             "tsConfig": "projects/trades/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/trades/src/favicon.ico",
-              "projects/trades/src/assets"
-            ],
-            "styles": [
-              "projects/trades/src/styles.scss"
-            ],
+            "assets": ["projects/trades/src/favicon.ico", "projects/trades/src/assets"],
+            "styles": ["projects/trades/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -312,13 +287,8 @@
             "tsConfig": "projects/trades/tsconfig.spec.json",
             "karmaConfig": "projects/trades/karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/trades/src/favicon.ico",
-              "projects/trades/src/assets"
-            ],
-            "styles": [
-              "projects/trades/src/styles.scss"
-            ],
+            "assets": ["projects/trades/src/favicon.ico", "projects/trades/src/assets"],
+            "styles": ["projects/trades/src/styles.scss"],
             "scripts": []
           }
         }

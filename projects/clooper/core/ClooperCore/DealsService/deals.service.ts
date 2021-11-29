@@ -1,24 +1,22 @@
-import { HttpClient } from '@angular/common/http';
+import type { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import type { Router } from '@angular/router';
 import { environment } from 'environments/environment';
-import { Observable, map, tap, catchError, of } from 'rxjs';
+import type { IResponse } from 'projects/clooper/common/ClooperTypes/response';
+import type { Observable } from 'rxjs';
+import { map, catchError, of } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class DealsService {
   readonly DEALS_URL = `${environment.API_ENDPOINT}deals`;
-  constructor(
-    public router: Router,
-    private http: HttpClient,
-  ) { }
+  constructor(public router: Router, private http: HttpClient) {}
 
-  getDeals(): Observable<Object> {
-    return this.http
-      .get(this.DEALS_URL)
-      .pipe(map((response: Object) => response),
-        catchError(() => of('Deals Error'))
-      );
+  getDeals(): Observable<IResponse | string> {
+    return this.http.get<IResponse>(this.DEALS_URL).pipe(
+      map((response: IResponse) => response),
+      catchError(() => of('Deals Error')),
+    );
   }
 }
